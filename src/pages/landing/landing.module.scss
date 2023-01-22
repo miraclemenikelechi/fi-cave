@@ -1,0 +1,54 @@
+@import "../../index.scss";
+
+.landing {
+    position: absolute;
+    width: 100%;
+    top: 200px;
+    @include flex($direction:column);
+
+    >img {
+        width: 640px;
+        height: 342px;
+        object-fit: cover;
+        border-radius: 50px;
+    }
+
+    >p {
+        color: white;
+
+        &:nth-of-type(1) {
+            font-size: 3.625rem;
+            width: 958px;
+        }
+
+        &:nth-of-type(2) {
+            font-size: 1.5rem;
+            word-wrap: wrap;
+        }
+    }
+
+    >div {
+        @include flex($direction:column);
+        margin-top: 120px;
+        padding-bottom: 50px;
+        gap: 20px;
+        color: white;
+
+        a {
+            height: 50px;
+            width: 200px;
+            @include flex;
+            font-size: 1.5rem;
+
+            &:nth-of-type(1) {
+                background-color: white;
+                color: $mainBackground;
+                border-radius: 45px;
+            }
+
+            &:nth-of-type(2) {
+                text-decoration: underline;
+            }
+        }
+    }
+}
