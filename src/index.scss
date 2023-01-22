@@ -1,0 +1,25 @@
+$breakpoints: ("mobile": 250px, "mini-tablet": 481px, "tablet": 768px, "laptop": 1025px, "tv": 1281px);
+
+$mainBackground:#121D43;
+
+@mixin flex($align:center, $direction:row, $justify:center) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $mainBackground;
+
+    .container {
+        min-height: 100%;
+    }
+}
