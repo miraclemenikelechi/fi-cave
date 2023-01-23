@@ -32,6 +32,16 @@ const
           element: < pages.Landing />
         }
       ]
+    },
+    {
+      path: "/",
+      element: <SignedInAppLayout />,
+      children: [
+        {
+          path: "/files",
+          element: <pages.Files />
+        }
+      ]
     }
   ]);
 

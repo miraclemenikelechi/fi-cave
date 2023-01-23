@@ -12,7 +12,7 @@ const Landing = () => {
             <p>Send, recieve and share files & documents with your <span>wallet address</span></p>
 
             <div>
-                <Link>Start Now</Link>
+                <Link to={"/files"}>Start Now</Link>
                 <Link>Learn More</Link>
             </div>
         </section>

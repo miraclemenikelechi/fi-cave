@@ -1,6 +1,9 @@
 $breakpoints: ("mobile": 250px, "mini-tablet": 481px, "tablet": 768px, "laptop": 1025px, "tv": 1281px);
 
 $mainBackground:#121D43;
+$purpleText:#552B9D;
+$highlightedPurple:#8140A0;
+$grayText:#757897;
 
 @mixin flex($align:center, $direction:row, $justify:center) {
     display: flex;
@@ -9,14 +12,20 @@ $mainBackground:#121D43;
     flex-direction: $direction;
 }
 
+// fonts
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+$dmSans:'DM Sans',
+sans-serif;
+$lato:'Lato',
+sans-serif;
 
 * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: 'DM Sans',
-        sans-serif;
+    font-family: $dmSans;
 }
 
 body {
