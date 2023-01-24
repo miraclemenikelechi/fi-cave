@@ -5,6 +5,14 @@ $purpleText:#552B9D;
 $highlightedPurple:#8140A0;
 $grayText:#757897;
 
+@mixin breakpoint-max($bp:0) {
+    @media (max-width: $bp) {
+        @content
+    }
+}
+
+;
+
 @mixin flex($align:center, $direction:row, $justify:center) {
     display: flex;
     align-items: $align;
