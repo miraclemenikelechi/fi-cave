@@ -40,6 +40,10 @@ const
         {
           path: "/files",
           element: <pages.Files />
+        },
+        {
+          path: "/send",
+          element: <pages.Send />
         }
       ]
     }

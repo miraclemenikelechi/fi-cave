@@ -1,7 +1,6 @@
 import style from "../files.module.scss";
 
 const Recent = ({ files }) => {
-    console.log(files);
     return (
         <>
             {
