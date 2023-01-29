@@ -7,6 +7,7 @@ const
   SignedOutAppLayout = () => {
     return (
       <>
+        <components.Scroll />
         <components.NavbarSignedOut />
         <Outlet />
       </>
@@ -16,8 +17,17 @@ const
   SignedInAppLayout = () => {
     return (
       <>
+        <components.Scroll />
         <components.NavbarSignedIn />
         <Outlet />
+      </>
+    );
+  },
+
+  ErrorPage = () => {
+    return (
+      <>
+        <pages.NotFound />
       </>
     );
   },
@@ -44,9 +54,17 @@ const
         {
           path: "/send",
           element: <pages.Send />
+        },
+        {
+          path: "/upload",
+          element: <pages.Upload />
         }
       ]
-    }
+    },
+    {
+      path: "*",
+      element: <ErrorPage />,
+    },
   ]);
 
 

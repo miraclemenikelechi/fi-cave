@@ -25,7 +25,7 @@ const Upload = () => {
 
     return (
         <div className={style.fileInput}>
-            <label htmlFor="reciever">upload files to send</label>
+            <label htmlFor="reciever">upload files to {pathname == "/send" ? "send" : "drive"}</label>
             <div
                 onClick={() => document.querySelector("#upload").click()}>
                 <div>
@@ -61,7 +61,7 @@ const Upload = () => {
                         multiple
                         accept="image/*, video/*, .doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
                     />
-                    <span>Select File or Document</span>
+                    <span>Select Files or Documents</span>
                     <span>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
